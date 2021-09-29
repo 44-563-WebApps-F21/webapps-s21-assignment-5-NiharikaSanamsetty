@@ -15,6 +15,19 @@
 
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-link active"><a class="nav-link" href="train.html">Train</a></li>
+    <li class="nav-link active"><a class="nav-link" href="plane.html">Plane</a></li>
+    </ul>
+  </div>
+  </nav>
+  <br>
   <div class="container">
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Seal</p></div>
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Antelope</p></div>
@@ -60,7 +73,7 @@
   <br>
   <center><caption style="font-weight: bold; font-size: 60px;"><b> My Animals Table</b></caption></center>
     <br>
-    <center><table class="table table-hover table-striped" style="width:80%">
+    <center><table class="table table-hover table-striped table-sm" style="width:80%">
      
     <style>
       table, th, td{
@@ -82,37 +95,37 @@
         </tr>
       </thead>
       <tbody style="text-align: center; border: 2px; width: 60%;" class="table_body">
-        <tr style="text-align: center; border: 2px;">
+        <tr class="table-active" style="text-align: center; border: 2px;">
           <td>S</td>
           <td>Seal</td>
           <td>San Francisco</td>
           <td>Siata</td>
         </tr>
-        <tr>
+        <tr class="table-active">
           <td>A</td>
           <td>Antelope</td>
           <td>Alaska</td>
           <td>Acura</td>
         </tr>
-        <tr>
+        <tr class="table-active">
           <td>N</td>
           <td>Numbat</td>
           <td>Neon</td>
           <td>Newark</td>
         </tr>
-        <tr>
+        <tr class="table-active">
           <td>A</td>
           <td>Ape</td>
           <td>Arlington</td>
           <td>Audi</td>
         </tr>
-        <tr>
+        <tr class="table-active">
           <td>M</td>
           <td>Magpie</td>
           <td>Mexico</td>
           <td>Maybach</td>
         </tr>
-        <tr>
+        <tr class="table-active">
           <td>S</td>
           <td>Salamander</td>
           <td>Santa Ana</td>
@@ -142,17 +155,72 @@
 </html>
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></div>
 <div class="btn btn-group-lg" role="group">
-  <button type="button" class="btn btn-success">G</button>
-  <button type="button" class="btn btn-success">U</button>
+  <button type="button" class="btn btn-success">S</button>
+  <button type="button" class="btn btn-success">A</button>
   <button type="button" class="btn btn-success">N</button>
 </div>
 
 <div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-alert">D</button>
-  <button type="button" class="btn btn-alert">L</button>
+  <button type="button" class="btn btn-alert">A</button>
+  <button type="button" class="btn btn-alert">M</button>
 </div>
 
 <div class="btn btn-group-lg" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-danger">A</button>
-  
+  <button type="button" class="btn btn-danger">S</button>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="dropdown"></div>
+  <button class="dropdown-toggle" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" >
+    Dropdown
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="plane.html">Plane </a>
+    <a class="dropdown-item" href="train.html">Train</a>
+  </div>
 </div>
+<br>
+<br>
+<form>
+  <div class=" form-group">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class=" form-group">
+      <label for="exampleInputAnimal" class="form-label">Enter your Animal</label>
+      <input type="text" class="form-control" >
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" >
+      <label class="checkbox" for="exampleCheck1"> Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+<br>
+<div class="card" style="width: 18rem;">
+<img src="Seal.jpg"  alt="...">
+<div class="card-body">
+  <p>Seal</p>
+  <p class="card-text">The giraffe (Giraffa) is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies.</p>
+  <a href="https://en.wikipedia.org/wiki/Giraffe"class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+<div class="card" style="width: 18rem;">
+<img src="Antelope.jpg"  alt="...">
+<div class="card-body">
+  <p>Antelope</p>
+  <p class="card-text">The Utonagan is a dog breed (Canis lupus familiaris) The Utonagan strongly resembles a wolf but in fact has no wolf content at all, consistlng of only three breeds of domestic dog: Alaskan Malamute, German Shepherd, and Siberian Husky</p>
+  <a href="https://en-academic.com/dic.nsf/enwiki/725095" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+<div class="card" style="width: 18rem;">
+<img src="Numbat.jpg" alt="...">
+<div class="card-body">
+  <p>Numbat</p>
+  <p class="card-text">The American Bulldog is a large breed of utility dog[1] descended from the Old English Bulldog.[3] They are now used on animal farms, dog sports, and for showing. They are part of American culture and history, and may be used as a cultural icon for the United States. </p>
+  <a href="https://en.wikipedia.org/wiki/American_Bulldog" class="btn btn-primary">Go somewhere</a>
+</div>
+</div> 
